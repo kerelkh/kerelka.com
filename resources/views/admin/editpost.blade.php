@@ -59,7 +59,7 @@
               file:bg-[#2A2B4A] file:text-gray-200
               hover:file:bg-[#030306]"
               onchange="onImageChange()"
-              accept="image/png, image/gif, image/jpeg"
+              accept="image/png, image/gif, image/jpeg, image/webp"
               >
               @if($post->thumbnail)
                 <span class="text-red-800 text-sm">* {{ $post->thumbnail }}</span>

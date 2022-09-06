@@ -111,7 +111,7 @@
             hover:file:bg-violet-100
             cursor-pointer"
             onchange="onImageChange()"
-            accept="image/png, image/gif, image/jpeg"
+            accept="image/png, image/gif, image/jpeg, image/webp"
             required>
           </div>
         </div>
