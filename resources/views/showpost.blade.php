@@ -52,7 +52,7 @@
       <a href="#" class="text-gray-400 hover:text-gray-900"><i class="fa-brands fa-instagram-square"></i></a>
     </div>
 
-    <div class="w-full md:w-[700px] first-letter:text-5xl text-gray-600 first-letter:float-left first-letter:uppercase pb-10 border-b border-gray-300 mb-5 text-sm sm:text-base md:text-lg">
+    <div class="w-full md:w-[700px] tracking-wider first-letter:text-5xl text-gray-600 first-letter:float-left first-letter:uppercase pb-10 border-b border-gray-300 mb-5 text-sm sm:text-base md:text-lg">
       {!! $post->post !!}
     </div>
 
