@@ -15,7 +15,7 @@
     @include('components.navtop')
     @yield('content')
   </div>
-  
+
   @include('components.footer')
 </body>
 </html>
