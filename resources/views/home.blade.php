@@ -237,7 +237,7 @@
             <div class="w-full lg:w-1/3">
                 {{-- banner --}}
                 <div class="w-full rounded-xl relative mb-10">
-                    <img src="{{ asset('images/bg6.jpg') }}" alt="" class="w-full h-full object-cover rounded-xl">
+                    <img src="{{ asset('images/bg6.webp') }}" alt="" class="w-full h-full object-cover rounded-xl">
                     <div class="absolute inset-0 flex flex-col px-3 lg:px-10 justify-center items-center">
                         <img src="{{ asset('icons/icon-black.png') }}" alt="" class="w-28">
                         <p class="text-center font-semibold text-gray-600 mt-2 lg:mt-5 text-sm lg:text-base">Hello, I'm Web Programmer and Developer, based in Indonesia with more than 2years++ experiences.</p>
