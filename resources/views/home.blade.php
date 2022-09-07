@@ -129,7 +129,7 @@
                                 </div>
                                 <div class="my-5 flex space-x-4 items-center">
                                     <div class="w-10 h-10 rounded overflow-hidden">
-                                        <img src="{{ asset('images/writer.jpg') }}" alt="author" class="w-full h-full object-cover">
+                                        <img src="{{ asset('images/writer.webp') }}" alt="author" class="w-full h-full object-cover">
                                     </div>
                                     <p class="text-gray-200 text-sm">{{ $randomPosts[0]->author }} {{ $randomPosts[0]->updated_at->format('d M Y') }}</p>
                                 </div>
@@ -179,7 +179,7 @@
                                 </div>
                                 <div class="my-5 flex space-x-4 items-center">
                                     <div class="w-10 h-10 rounded overflow-hidden">
-                                        <img src="{{ asset('images/writer.jpg') }}" alt="author" class="w-full h-full object-cover">
+                                        <img src="{{ asset('images/writer.webp') }}" alt="author" class="w-full h-full object-cover">
                                     </div>
                                     <p class="text-gray-200 text-sm">{{ $mostViewPosts[0]->author }} {{ $mostViewPosts[0]->updated_at->format('d M Y') }}</p>
                                 </div>
@@ -198,7 +198,7 @@
                                 </div>
                                 <div class="my-5 flex space-x-4 items-center">
                                     <div class="w-10 h-10 rounded overflow-hidden">
-                                        <img src="{{ asset('images/writer.jpg') }}" alt="author" class="w-full h-full object-cover">
+                                        <img src="{{ asset('images/writer.webp') }}" alt="author" class="w-full h-full object-cover">
                                     </div>
                                     <p class="text-gray-200 text-sm">{{ $mostViewPosts[1]->author }} {{ $mostViewPosts[1]->updated_at->format('d M Y') }}</p>
                                 </div>
