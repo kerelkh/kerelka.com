@@ -7,12 +7,12 @@
 @section('content')
   <div class="mx-2 sm:mx-4 md:mx-12 lg:mx-24 xl:mx-48">
     <div class="w-full overflow-hidden relative mb-4">
-        <img src="{{ asset('images/banner1.jpg')}}" alt="banner" class="w-full h-full object-cover">
+        <img src="{{ asset('images/banner1.webp')}}" alt="banner" class="w-full h-full object-cover">
     </div>
     <div class="w-full flex flex-col md:flex-row flex-wrap bordermb-2 rounded gap-2 mb-5">
         <a href="/blogs{{ ($keyword  != '') ? '?keyword=' . $keyword : '' }}" class="text-sm md:text-base flex py-2 px-4 justify-center items-center bg-secondary rounded-xl border border-transparent hover:border-blue-900 transition ease-in-out hover:text-gray-200 @if(!request()->input('category')) bg-blue-500 text-white @endif">All</a>
         @foreach($categories as $category)
-        <a href="?category={{ $category->category_name }}@if($keyword != '')&&keyword={{ $keyword }}@endif" class="text-sm md:text-base flex py-2 px-4 justify-center items-center bg-secondary rounded-xl border border-transparent hover:border-blue-900 transition ease-in-out hover:text-gray-200 
+        <a href="?category={{ $category->category_name }}@if($keyword != '')&&keyword={{ $keyword }}@endif" class="text-sm md:text-base flex py-2 px-4 justify-center items-center bg-secondary rounded-xl border border-transparent hover:border-blue-900 transition ease-in-out hover:text-gray-200
         @if(request()->input('category') == $category->category_name)
         bg-blue-500 text-white
         @endif
