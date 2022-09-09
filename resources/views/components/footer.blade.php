@@ -1,7 +1,8 @@
 <footer class='py-4 px-4 sm:px-10 md:px-20 lg:px-40 flex flex-col md:flex-row justify-between items-start w-full gap-10 bg-gray-900'>
   <div class="flex flex-col space-y-2 w-full md:w-1/3">
     <a href="/" class="w-32 md:w-60 block">
-      <img src="{{ asset('icons/brand-icon.png') }}" alt="brand" class="object-cover">
+      {{-- <img src="{{ asset('icons/brand-icon.png') }}" alt="brand" class="object-cover"> --}}
+      <h3 class="tracking-widest uppercase font-bold text-5xl text-white">KEREL<span class="text-blue-500">K</span>A</h3>
     </a>
     <p class="text-gray-400 text-sm md:text-base">&copy; Copyrights 2022 by kerelka.com</p>
   </div>

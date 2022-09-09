@@ -974,11 +974,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
-.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
-}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1043,6 +1038,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
+.border-transparent {
+  border-color: transparent;
+}
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1058,9 +1056,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-blue-500 {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
-}
-.border-transparent {
-  border-color: transparent;
 }
 .bg-red-500 {
   --tw-bg-opacity: 1;
@@ -1100,16 +1095,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(27 43 69 / var(--tw-bg-opacity));
 }
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+.bg-secondary\/50 {
+  background-color: rgb(27 43 69 / 0.5);
+}
 .bg-black\/20 {
   background-color: rgb(0 0 0 / 0.2);
 }
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(21 31 50 / var(--tw-bg-opacity));
-}
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 .bg-black\/40 {
   background-color: rgb(0 0 0 / 0.4);
@@ -1175,12 +1173,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-violet-700\/80 {
   background-color: rgb(109 40 217 / 0.8);
-}
-.bg-blue-500\/50 {
-  background-color: rgb(59 130 246 / 0.5);
-}
-.bg-secondary\/50 {
-  background-color: rgb(27 43 69 / 0.5);
 }
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
@@ -1476,21 +1468,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
-.text-white {
+.text-gray-600 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 .text-transparent {
   color: transparent;
@@ -1825,23 +1817,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:border:hover {
-  border-width: 1px;
-}
-
 .hover\:border-blue-900:hover {
   --tw-border-opacity: 1;
   border-color: rgb(30 58 138 / var(--tw-border-opacity));
 }
 
-.hover\:border-\[\#18192d\]:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(24 25 45 / var(--tw-border-opacity));
-}
-
 .hover\:border-blue-500:hover {
   --tw-border-opacity: 1;
   border-color: rgb(59 130 246 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\#18192d\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 25 45 / var(--tw-border-opacity));
 }
 
 .hover\:bg-red-800:hover {
@@ -1856,6 +1844,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:bg-gray-800\/20:hover {
   background-color: rgb(31 41 55 / 0.2);
+}
+
+.hover\:bg-secondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 43 69 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#151F32\]\/20:hover {
@@ -1941,11 +1934,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(109 40 217 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-secondary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(27 43 69 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-gradient-to-br:hover {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -1959,11 +1947,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
-.hover\:text-gray-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1972,6 +1955,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-800:hover {
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .hover\:text-red-800:hover {
@@ -2053,11 +2041,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-scale-x: 1;
   --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.focus\:border-violet-500:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(139 92 246 / var(--tw-border-opacity));
 }
 
 .focus\:border-blue-500:focus {
@@ -2487,11 +2470,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 5rem;
   }
 
-  .md\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .md\:pr-5 {
     padding-right: 1.25rem;
   }
@@ -2525,14 +2503,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.25rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:line-clamp-2 {
