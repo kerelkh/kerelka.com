@@ -11,6 +11,7 @@ module.exports = {
             },
             aspectRation: {
                 "3/6": "3 / 6",
+                "4/6": "4 / 6",
             },
             colors: {
                 primary: "#151F32",

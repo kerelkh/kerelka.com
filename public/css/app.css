@@ -1191,6 +1191,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-from: #1B2B45;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(27 43 69 / 0));
 }
+.from-transparent {
+  --tw-gradient-from: transparent;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
+}
 .via-primary {
   --tw-gradient-stops: var(--tw-gradient-from), #151F32, var(--tw-gradient-to, rgb(21 31 50 / 0));
 }
@@ -1205,6 +1209,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .to-primary {
   --tw-gradient-to: #151F32;
+}
+.to-black\/50 {
+  --tw-gradient-to: rgb(0 0 0 / 0.5);
 }
 .bg-cover {
   background-size: cover;
@@ -2088,6 +2095,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }
 
 @media (prefers-color-scheme: dark) {
