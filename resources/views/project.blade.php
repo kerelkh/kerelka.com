@@ -49,5 +49,10 @@
             <p class="w-full text-sm text-gray-300">Tidak ada project terkait...</p>
         </div>
     @endforelse
+    @if($projects != null)
+        <div class="w-full col-span-full flex justify-end">
+            {{ $projects->withQueryString()->links() }}
+        </div>
+    @endif
 </div>
 @endsection
