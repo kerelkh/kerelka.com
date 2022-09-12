@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="w-full p-5 bg-gradient-to-r from-secondary to-primary ring-1 ring-blue-400/20 rounded-3xl tracking-wide first-letter:text-5xl text-gray-300 first-letter:float-left first-letter:uppercase pb-10 mb-5 text-sm sm:text-base md:text-lg">{{ $project->description  }}
+            <div class="w-full p-5 bg-gradient-to-r from-secondary to-primary ring-1 ring-blue-400/20 rounded-3xl tracking-wide first-letter:text-5xl text-gray-300 first-letter:float-left first-letter:uppercase pb-10 mb-5 text-sm sm:text-base md:text-lg">{!! $project->description  !!}
             </div>
             <div class="w-full py-1 flex space-x-5 mb-5 md:mb-10">
                 <a href="#" class="text-gray-200 hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
