@@ -17,9 +17,9 @@
     <div class="col-span-1 md:col-span-4">
         <div id="post" class="flex flex-col items-center">
             <div class="w-full flex justify-start  space-x-2 items-center text-gray-200 mb-2 md:mb-5 text-xs md:text-sm lg:text-base">
-              <a href="/" class="hover:text-gray-800">Home</a>
+              <a href="/" class="hover:text-white">Home</a>
               <i class="fa-solid fa-caret-right"></i>
-              <a href="{{ $post->slug }}" class="text-gray-200">{{ $post->title }}</a>
+              <a href="{{ $post->slug }}" class="text-white capitalize">{{ $post->title }}</a>
 
             </div>
             <div class="text-gray-200 w-full text-xs mb-5 flex space-x-2  rounded-xl">
