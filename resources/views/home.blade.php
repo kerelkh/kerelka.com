@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
-<body class="bg-gradient-to-br from-secondary via-primary to-secondary">
-
+<body>
+    <div class="box absolute -z-50">
+        <div class='wave -one'></div>
+        <div class='wave -two'></div>
+        <div class='wave -three'></div>
+    </div>
     {{-- sidenav --}}
     <div id="sidenav" class="transition-all duration-300 ease-in-out fixed top-0 bottom-0 right-0 w-0 z-50 overflow-hidden bg-primary">
         <button onclick="toggleMenu()" class="absolute top-4 right-4 text-gray-200 hover:text-white"><i class="fa-solid fa-x"></i></button>
