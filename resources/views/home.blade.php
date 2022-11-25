@@ -127,14 +127,14 @@
                             <div class="w-full lg:w-1/2 p-4 lg:p-8 rounded-3xl bg-gradient-to-b from-secondary to-primary mb-5 lg:mb-0">
                                 <div class="w-full aspect-video rounded-3xl overflow-hidden relative group transition duration-300 ease-in-out">
                                     <img src="{{ asset('storage/' . $randomPosts[0]->thumbnail) }}" alt="thumbnail {{ $randomPosts[0]->title }}" class="w-full h-full transition duration-300 ease-in-out rounded">
-                                    <div class="absolute inset-0 bg-black/40 p-5">
+                                    <div class="absolute inset-0 p-5">
                                         <a href="/blogs?category={{ $randomPosts[0]->getCategory->category_name }}" class="bg-gradient-to-br from-blue-500 to-purple-500 py-1 px-4 rounded-2xl">{{ $randomPosts[0]->getCategory->category_name }}</a>
                                     </div>
                                 </div>
                                 <div class="my-5 flex space-x-4 items-center">
-                                    <div class="w-10 h-10 rounded overflow-hidden">
+                                    {{-- <div class="w-10 h-10 rounded overflow-hidden">
                                         <img src="{{ asset('images/writer.webp') }}" alt="author" class="w-full h-full object-cover">
-                                    </div>
+                                    </div> --}}
                                     <p class="text-gray-200 text-sm">{{ $randomPosts[0]->author }} {{ $randomPosts[0]->updated_at->format('d M Y') }}</p>
                                 </div>
                                 <div class="flex flex-col space-y-2">
@@ -177,14 +177,14 @@
                             <div class="w-full lg:w-1/2 p-2 lg:p-8 bg-gradient-to-b from-secondary to-primary rounded-3xl">
                                 <div class="w-full aspect-video rounded-3xl overflow-hidden relative transition duration-300 ease-in-out">
                                     <img src="{{ asset('storage/' . $mostViewPosts[0]->thumbnail) }}" alt="Thumbnail {{ $mostViewPosts[0]->title }}" class="w-full h-full  transition duration-300 ease-in-out rounded-2xl object-cover">
-                                    <div class="absolute inset-0 bg-black/40 p-5">
+                                    <div class="absolute inset-0 p-5">
                                         <a href="/blogs?category={{ $mostViewPosts[0]->getCategory->category_name }}" class="bg-gradient-to-br from-blue-500 to-purple-500 py-1 px-4 rounded-2xl">{{ $mostViewPosts[0]->getCategory->category_name }}</a>
                                     </div>
                                 </div>
                                 <div class="my-5 flex space-x-4 items-center">
-                                    <div class="w-10 h-10 rounded overflow-hidden">
+                                    {{-- <div class="w-10 h-10 rounded overflow-hidden">
                                         <img src="{{ asset('images/writer.webp') }}" alt="author" class="w-full h-full object-cover">
-                                    </div>
+                                    </div> --}}
                                     <p class="text-gray-200 text-sm">{{ $mostViewPosts[0]->author }} {{ $mostViewPosts[0]->updated_at->format('d M Y') }}</p>
                                 </div>
                                 <div class="flex flex-col space-y-2">
@@ -196,14 +196,14 @@
                             <div class="w-full lg:w-1/2 p-2 lg:p-8 bg-gradient-to-b from-secondary to-primary rounded-3xl">
                                 <div class="w-full aspect-video rounded-3xl overflow-hidden relative  transition duration-300 ease-in-out">
                                     <img src="{{ asset('storage/' . $mostViewPosts[1]->thumbnail) }}" alt="Thumbnail {{ $mostViewPosts[1]->title }}" class="w-full h-full transition duration-300 ease-in-out rounded-2xl object-cover">
-                                    <div class="absolute inset-0 bg-black/40 p-5">
+                                    <div class="absolute inset-0 p-5">
                                         <a href="/blogs?=categories={{ $mostViewPosts[1]->getCategory->category_name }}" class="bg-gradient-to-br from-blue-500 to-purple-500 py-1 px-4 rounded-2xl">{{ $mostViewPosts[1]->getCategory->category_name }}</a>
                                     </div>
                                 </div>
                                 <div class="my-5 flex space-x-4 items-center">
-                                    <div class="w-10 h-10 rounded overflow-hidden">
+                                    {{-- <div class="w-10 h-10 rounded overflow-hidden">
                                         <img src="{{ asset('images/writer.webp') }}" alt="author" class="w-full h-full object-cover">
-                                    </div>
+                                    </div> --}}
                                     <p class="text-gray-200 text-sm">{{ $mostViewPosts[1]->author }} {{ $mostViewPosts[1]->updated_at->format('d M Y') }}</p>
                                 </div>
                                 <div class="flex flex-col space-y-2">

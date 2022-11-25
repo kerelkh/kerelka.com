@@ -1088,9 +1088,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(21 31 50 / var(--tw-bg-opacity));
 }
-.bg-black\/40 {
-  background-color: rgb(0 0 0 / 0.4);
-}
 .bg-black\/20 {
   background-color: rgb(0 0 0 / 0.2);
 }
@@ -1177,6 +1174,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
 }
+.from-black {
+  --tw-gradient-from: #000;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
+}
 .via-primary {
   --tw-gradient-stops: var(--tw-gradient-from), #151F32, var(--tw-gradient-to, rgb(21 31 50 / 0));
 }
@@ -1191,6 +1192,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .to-secondary\/20 {
   --tw-gradient-to: rgb(27 43 69 / 0.2);
+}
+.to-transparent {
+  --tw-gradient-to: transparent;
 }
 .to-secondary {
   --tw-gradient-to: #1B2B45;
@@ -1538,6 +1542,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .opacity-0 {
   opacity: 0;
+}
+.opacity-70 {
+  opacity: 0.7;
 }
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);

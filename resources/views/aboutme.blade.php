@@ -25,13 +25,13 @@
         <span class="w-16 h-1 rotate-90 bg-red-500 mb-8"></span>
         <a href="#" class="text-2xl"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="#" class="text-2xl"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" class="text-2xl"><i class="fa-brands fa-linkedin-in"></i></a>  
+        <a href="#" class="text-2xl"><i class="fa-brands fa-linkedin-in"></i></a>
     </div>
     {{-- end of medsos --}}
 
     <div id="fullpage">
         {{-- hero --}}
-        <div 
+        <div
         class="section bg-[#2A2B4A] bg-no-repeat bg-cover bg-center bg-fixed text-gray-200 font-sans min-h-screen px-4 sm:px-18 md:px-28 lg:px-48 py-4 md:py-6 lg:py-10"
         style="background-image: url({{ asset('images/bg1.jpg') }})">
             <div class="w-full h-full flex flex-col items-stretch py-5">
@@ -95,11 +95,11 @@
                     <p class="text-gray-400 text-xs md:text-sm text-center md:text-left">View all my work here,still learn not even close to profesional. hope you like it.</span></p>
                 </div>
                 <div class="w-full md:w-1/2 flex  justify-around md:justify-end gap-5 text-sm">
-                    <button id="btnDesign" onclick="togglePortfolio('design')" class="p-1 w-1/3 md:w-fit md:p-4 bg-red-500 hover:bg-red-500 text-gray-200 transition-all ease-in-out">Designs</button>
-                    <button id="btnProject" onclick="togglePortfolio('project')" class="p-1 w-1/3 md:w-fit md:p-4 hover:bg-red-500 hover:text-gray-200 transition-all ease-in-out">Projects</button>
+                    <button id="btnDesign" onclick="togglePortfolio('design')" class="p-1 w-1/3 md:w-fit md:p-4 hover:bg-red-500 hover:text-gray-200 transition-all ease-in-out">Designs</button>
+                    <button id="btnProject" onclick="togglePortfolio('project')" class="p-1 w-1/3 md:w-fit md:p-4 bg-red-500 hover:bg-red-500 text-gray-200 transition-all ease-in-out">Projects</button>
                 </div>
             </div>
-            <div id="design" class="flex flex-wrap items-center">
+            <div id="design" class="hidden flex-wrap items-center">
                 @foreach($designs as $design)
                 <div class="w-full sm:w-1/2 md:w-1/3 p-4">
                     <div class="w-full h-full bg-blue-400/50 relative rounded overflow-hidden">
@@ -111,7 +111,7 @@
                 </div>
                 @endforeach
             </div>
-            <div id="project" class="hidden flex-wrap items-center">
+            <div id="project" class="flex flex-wrap items-center">
                 @foreach($projects as $project)
                 <div class="w-full sm:w-1/2 md:w-1/3 p-4">
                     <div class="w-full h-full bg-blue-400/50 relative rounded overflow-hidden">
